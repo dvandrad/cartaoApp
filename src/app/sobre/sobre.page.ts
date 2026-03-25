@@ -3,19 +3,18 @@ import { Router } from '@angular/router';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-sobre',
+  templateUrl: './sobre.page.html',
+  styleUrls: ['./sobre.page.scss'],
   standalone: true,
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton],
 })
-export class HomePage {
+export class SobrePage {
 
   constructor(private router: Router) {}
 
-  irParaSobre() {
-    this.router.navigate(['/sobre']);
+  voltar() {
+    this.router.navigate(['/home']);
   }
 
 }
-
